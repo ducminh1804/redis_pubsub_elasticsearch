@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: learn
+  datasource:
+    url: "jdbc:mysql://localhost:3306/es_redis"
+    driver-class-name: "com.mysql.cj.jdbc.Driver"
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  data:
+    redis:
+      port: 6379
+      host: localhost
+#    elasticsearch:
+#      repositories:
+#        enabled: true
+logging:
+  level:
+    tracer: TRACE
